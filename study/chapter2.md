@@ -1,5 +1,7 @@
 깃 스터디 - 챕터 2 정리
+
 🔹 깃으로 버전 관리하기
+
 📑 목차
 
 [1] 깃 저장소 만들기
@@ -15,9 +17,11 @@
 [6] 문제 풀이
 
 [1] 깃 저장소 만들기
+
  사용자 컴퓨터에 저장소 만들기
 
 1️⃣ 새로운 디렉터리 생성
+
 터미널에서 다음 명령을 입력한다.
 
 mkdir hello-git
@@ -45,6 +49,7 @@ git init
 
 
 현재 디렉터리를 Git 저장소로 초기화한다.
+
 명령 실행 후 .git이라는 숨김 폴더가 생성되면 완료.
 
 [2] 버전 만들기
@@ -170,15 +175,25 @@ git revert [커밋 해시]
 변경 내용만 되돌리고, 되돌렸다는 새로운 커밋을 생성한다.
 
 [6] 문제 풀이
+
 번호	명령어	설명
+
 1	git config --global user.name "easys"	사용자 이름 설정
+
 2	git config --global user.email "doit@easys.co.kr"	이메일 설정
+
 3	git init	저장소 초기화
+
 4	git status	파일 상태 확인
+
 5	git add ch01.txt	파일 스테이징
+
 6	git commit -m "ch01"	커밋 생성
+
 7	git commit -am "ch02"	수정 + 커밋 한 번에
+
 8	git log	커밋 로그 확인
+
 9	git diff	변경 사항 비교
 10	git restore work.txt	파일 수정 취소
 11	git restore --staged work.txt	스테이징 취소
