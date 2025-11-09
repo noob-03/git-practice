@@ -136,16 +136,20 @@ ls -al
  같은 부분을 수정한 경우 (충돌 발생)
 
 1️⃣ main 브랜치로 전환
+
 2️⃣ git merge [브랜치명] 실행
+
 3️⃣ Git이 자동 병합 불가 메시지를 출력
+
 4️⃣ 수정 파일을 열면 다음과 같은 표시가 나타남:
 
+==========================
 <<<<<<< HEAD
 (main 브랜치 내용)
 =======
 (병합할 브랜치 내용)
 >>>>>>> feature
-
+==========================
 
 5️⃣ 충돌 부분을 직접 수정한 뒤 다시 커밋한다.
 
@@ -173,21 +177,38 @@ git cherry-pick a1b2c3d
 ➡️ a1b2c3d 커밋만 현재 브랜치에 병합된다.
 
 [5] 문제 풀이
+
 번호	명령어	설명
+
 1	git branch fixed	새 브랜치 생성
+
 2	git switch fixed	브랜치 전환
+
 3	git log --oneline	로그를 한 줄로 보기
+
 4	git add .	변경된 파일 모두 스테이징
+
 5	git log --graph	브랜치와 커밋 관계를 그래프로 보기
+
 6	cat edit.txt	파일 내용 확인
+
 7	git init	깃 저장소 초기화
+
 8	git merge fixed	fixed 브랜치 병합
+
 9	git branch -d fixed	병합 완료된 브랜치 삭제
 
 🧾 정리 요약
+
 항목	핵심 내용
+
 브랜치(Branch)	프로젝트 내 독립된 작업 흐름을 관리하는 가지
+
 기본 브랜치	main (기본 생성)
+
 주요 명령어	branch, switch, merge, log, cherry-pick
+
 병합 시 주의점	같은 부분을 수정하면 충돌 발생 가능
+
 병합 후 정리	필요 없는 브랜치는 git branch -d로 삭제
+
